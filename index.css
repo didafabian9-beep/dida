@@ -272,3 +272,100 @@ footer{
     width: 100vw;
     padding: 20px;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  #logo {
+    flex-direction: column;
+  }
+
+  #logo h1 {
+    font-size: 1.4rem;
+  }
+
+  #links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  #Home, #About, #Courses, #Timetable, #registration {
+    height: auto;
+    width: 100%;
+    grid-template-rows: auto;
+  }
+
+  #Home {
+    grid-template-columns: 1fr;
+  }
+
+  .homeevents {
+    grid-column: auto;
+  }
+
+  .homeban, .homecontent, .homeevents,
+  .Aboutcontent, .Aboutimgs,
+  .coursescontent, .coursesimgs, .steps,
+  .timetablecontent, .registercontent {
+    height: auto;
+    min-height: 200px;
+    padding: 15px;
+  }
+
+  .homeban img, .homeevents img,
+  .Aboutimgs img, .courseimgs2 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .Aboutcontent {
+    flex-direction: column;
+  }
+
+  .Aboutimgs {
+    flex-direction: column;
+  }
+
+  .coursesimgs {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timetablecontent {
+    overflow-x: auto;
+    align-items: stretch;
+  }
+
+  .timetablecontent table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .registercontent form,
+  .registercontent table,
+  .registercontent input,
+  .registercontent select {
+    width: 100%;
+  }
+
+  .registercontent input[type="radio"] {
+    width: auto;
+  }
+
+  .registercontent td {
+    display: block;
+    border: none;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+}
